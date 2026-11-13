@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Quiz ♡</title>
+    <link rel="stylesheet" href="quix.css">
+</head>
+<body>
+       <div class="question-card" id="question1">
+    <span class="question-number">QUESTION 01</span>
+    <h2>A little test of how well you know me... ♡</h2>
+    <p>What is my favourite colour?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 1)">A) Pink</button>
+        <button class="option" onclick="checkAnswer(this, true, 1)">B) Blue</button>
+        <button class="option" onclick="checkAnswer(this, false, 1)">C) Purple</button>
+        <button class="option" onclick="checkAnswer(this, false, 1)">D) Black</button>
+    </div>
+
+    <p id="feedback1"></p>
+    <button class="next-button" id="next1" onclick="nextQuestion(1)">Next Question →</button>
+</div>
+
+
+<div class="question-card" id="question2" style="display:none;">
+    <span class="question-number">QUESTION 02</span>
+    <h2>Let's see if you know my anime taste! ♡</h2>
+    <p>What is my favourite anime?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 2)">A) Naruto</button>
+        <button class="option" onclick="checkAnswer(this, false, 2)">B) Demon Slayer</button>
+        <button class="option" onclick="checkAnswer(this, true, 2)">C) Frieren: Beyond Journey's End</button>
+        <button class="option" onclick="checkAnswer(this, false, 2)">D) Attack on Titan</button>
+    </div>
+
+    <p id="feedback2"></p>
+    <button class="next-button" id="next2" onclick="nextQuestion(2)">
+    Next Question →
+</button>
+</div>
+
+
+<div class="question-card" id="question3" style="display:none;">
+    <span class="question-number">QUESTION 03</span>
+    <h2>Do you know my biggest dream? ♡</h2>
+    <p>What is my biggest dream?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 3)">A) Becoming a doctor</button>
+        <button class="option" onclick="checkAnswer(this, true, 3)">B) Becoming a CEO</button>
+        <button class="option" onclick="checkAnswer(this, false, 3)">C) Becoming a famous artist</button>
+        <button class="option" onclick="checkAnswer(this, false, 3)">D) Travelling the world</button>
+    </div>
+
+    <p id="feedback3"></p>
+    <button class="next-button" id="next3" onclick="nextQuestion(3)">Next Question →</button>
+</div>
+
+
+<div class="question-card" id="question4" style="display:none;">
+    <span class="question-number">QUESTION 04</span>
+    <h2>How well do you understand my personality? ♡</h2>
+    <p>Am I an introvert or an extrovert?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 4)">A) More of an introvert</button>
+        <button class="option" onclick="checkAnswer(this, false, 4)">B) A complete extrovert</button>
+        <button class="option" onclick="checkAnswer(this, false, 4)">C) Both equally</button>
+        <button class="option" onclick="checkAnswer(this, true, 4)">D) It depends on the day</button>
+    </div>
+
+    <p id="feedback4"></p>
+    <button class="next-button" id="next4" onclick="nextQuestion(4)">Next Question →</button>
+</div>
+
+
+<div class="question-card" id="question5" style="display:none;">
+    <span class="question-number">QUESTION 05</span>
+    <h2>A little personal question... ♡</h2>
+    <p>What makes me instantly happy?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 5)">A) Shopping</button>
+        <button class="option" onclick="checkAnswer(this, false, 5)">B) Watching anime</button>
+        <button class="option" onclick="checkAnswer(this, true, 5)">C) You, my best friend</button>
+        <button class="option" onclick="checkAnswer(this, false, 5)">D) Sleeping</button>
+    </div>
+
+    <p id="feedback5"></p>
+    <button class="next-button" id="next5" onclick="nextQuestion(5)">Next Question →</button>
+</div>
+
+
+<div class="question-card" id="question6" style="display:none;">
+    <span class="question-number">QUESTION 06</span>
+    <h2>Let's see if you remember this... ♡</h2>
+    <p>What is my biggest fear?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 6)">A) Darkness</button>
+        <button class="option" onclick="checkAnswer(this, true, 6)">B) Allah</button>
+        <button class="option" onclick="checkAnswer(this, false, 6)">C) Being alone</button>
+        <button class="option" onclick="checkAnswer(this, false, 6)">D) Heights</button>
+    </div>
+
+    <p id="feedback6"></p>
+    <button class="next-button" id="next6" onclick="nextQuestion(6)">Next Question →</button>
+</div>
+
+
+<div class="question-card" id="question7" style="display:none;">
+    <span class="question-number">QUESTION 07</span>
+    <h2>Pack your bags! ♡</h2>
+    <p>What is my dream travel destination?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 7)">A) South Korea</button>
+        <button class="option" onclick="checkAnswer(this, false, 7)">B) Switzerland</button>
+        <button class="option" onclick="checkAnswer(this, true, 7)">C) Japan</button>
+        <button class="option" onclick="checkAnswer(this, false, 7)">D) Italy</button>
+    </div>
+
+    <p id="feedback7"></p>
+    <button class="next-button" id="next7" onclick="nextQuestion(7)">Next Question →</button>
+</div>
+
+
+<div class="question-card" id="question8" style="display:none;">
+    <span class="question-number">QUESTION 08</span>
+    <h2>One last question... ♡</h2>
+    <p>What hurts me most in a friendship?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 8)">A) Not getting gifts</button>
+        <button class="option" onclick="checkAnswer(this, true, 8)">B) Feeling like I'm no longer important to them</button>
+        <button class="option" onclick="checkAnswer(this, false, 8)">C) Having different hobbies</button>
+        <button class="option" onclick="checkAnswer(this, false, 8)">D) Not talking every day</button>
+    </div>
+
+    <p id="feedback8"></p>
+    <button class="next-button" id="next8" onclick="nextQuestion(8)">See My Score ♡</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

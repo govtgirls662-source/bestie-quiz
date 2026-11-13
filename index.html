@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Well Do You Know Me?</title>
+    <link rel="stylesheet" href="quix.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="welcome" id="welcomePage">
+        <svg class="curved-heading" viewBox="0 0 1100 400">
+            <defs>
+                <path id="firstCurve"
+                    d="M 200 160 Q 550 -20 900 160" />
+                <path id="secondCurve"
+                    d="M 150 260 Q 550 30 950 260" />
+            </defs>
+            <text>
+                <textPath href="#firstCurve"
+                    startOffset="50%"
+                    text-anchor="middle">
+                    How Well
+                </textPath>
+            </text>
+            <text>
+                <textPath href="#secondCurve"
+                    startOffset="50%"
+                    text-anchor="middle">
+                    Do You Know Me?
+                </textPath>
+            </text>
+        </svg>
+        <p>
+            A little quiz to test your knowledge about me...
+            <br>
+            Are you ready, bestie? ♡
+        </p>
+        <button onclick="window.location.href='love.html'">
+    Start Quiz →
+</button>
+    </main>
+</body>
+</html>

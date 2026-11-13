@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Score ♡</title>
+    <link rel="stylesheet" href="quix.css">
+</head>
+
+<body>
+
+    <div class="question-card result-card">
+
+        <h1>Quiz Completed! ♡</h1>
+
+        <p>You got:</p>
+
+        <h2 id="score">0 / 8</h2>
+
+        <p id="message"></p>
+
+        <button onclick="location.href='love.html'">
+            Try Again ♡
+        </button>
+
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const finalScore = Number(params.get("score")) || 0;
+
+        document.getElementById("score").textContent = finalScore + " / 8";
+
+        let message = "";
+
+        if (finalScore === 8) {
+            message = "OMG! You know me perfectly! ♡";
+        } else if (finalScore >= 6) {
+            message = "You know me pretty well! ♡";
+        } else if (finalScore >= 4) {
+            message = "Not bad! But you still have things to learn about me!";
+        } else {
+            message = "We definitely need to spend more time together! ♡";
+        }
+
+        document.getElementById("message").textContent = message;
+    </script>
+
+</body>
+</html>
