@@ -127,7 +127,6 @@
     <button class="next-button" id="next7" onclick="nextQuestion(7)">Next Question →</button>
 </div>
 
-
 <div class="question-card" id="question8" style="display:none;">
     <span class="question-number">QUESTION 08</span>
     <h2>One last question... ♡</h2>
@@ -143,7 +142,47 @@
     <p id="feedback8"></p>
     <button class="next-button" id="next8" onclick="nextQuestion(8)">See My Score ♡</button>
 </div>
+<div class="question-card" id="question9" style="display: none;">
 
-<script src="script.js"></script>
+    <span class="question-number">QUESTION 09</span>
+
+    <h2>How well do you understand me? ♡</h2>
+
+    <p>What do I usually do when something is bothering me?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, true, 9)">A. Talk about it immediately</button>
+        <button class="option" onclick="checkAnswer(this, false, 9)">B. Keep everything to myself</button>
+        <button class="option" onclick="checkAnswer(this, false, 9)">C. Act like nothing happened</button>
+        <button class="option" onclick="checkAnswer(this, false, 9)">D. Distance myself from everyone</button>
+    </div>
+
+    <p id="feedback9"></p>
+
+    <button class="next-button" id="next9" onclick="nextQuestion(9)">Next Question ♡</button>
+
+</div>
+
+<div class="question-card" id="question10" style="display: none;">
+
+    <span class="question-number">QUESTION 10</span>
+
+    <h2>One last thing! ♡</h2>
+
+    <p>What do I value the most in a friendship?</p>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(this, false, 10)">A. Constant attention</button>
+        <button class="option" onclick="checkAnswer(this, true, 10)">B. Honesty and loyalty</button>
+        <button class="option" onclick="checkAnswer(this, false, 10)">C. Expensive gifts</button>
+        <button class="option" onclick="checkAnswer(this, false, 10)">D. Talking every single day</button>
+    </div>
+
+    <p id="feedback10"></p>
+
+    <button class="next-button" id="next10" onclick="nextQuestion(10)">See My Score ♡</button>
+    
+</div>
 </body>
+<script src="script.js"></script>
 </html>

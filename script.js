@@ -42,8 +42,7 @@ function nextQuestion(questionNumber) {
 
     // Hide current question
     document.getElementById("question" + questionNumber).style.display = "none";
-
-    if (questionNumber < 8) {
+    if (questionNumber < 10) {
 
         // Show next question
         document.getElementById("question" + (questionNumber + 1)).style.display = "block";

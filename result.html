@@ -15,7 +15,7 @@
 
         <p>You got:</p>
 
-        <h2 id="score">0 / 8</h2>
+        <h2 id="score">0 / 10</h2>
 
         <p id="message"></p>
 
@@ -29,20 +29,19 @@
         const params = new URLSearchParams(window.location.search);
         const finalScore = Number(params.get("score")) || 0;
 
-        document.getElementById("score").textContent = finalScore + " / 8";
+        document.getElementById("score").textContent = finalScore + " / 10";
 
         let message = "";
 
-        if (finalScore === 8) {
-            message = "OMG! You know me perfectly! ♡";
-        } else if (finalScore >= 6) {
-            message = "You know me pretty well! ♡";
-        } else if (finalScore >= 4) {
-            message = "Not bad! But you still have things to learn about me!";
-        } else {
-            message = "We definitely need to spend more time together! ♡";
-        }
-
+        if (finalScore === 10) {
+    message = "OMG! You know me perfectly! ♡";
+} else if (finalScore >= 8) {
+    message = "You know me pretty well! ♡";
+} else if (finalScore >= 5) {
+    message = "Not bad! But you still have things to learn about me!";
+} else {
+    message = "We definitely need to spend more time together! ♡";
+}
         document.getElementById("message").textContent = message;
     </script>
 
