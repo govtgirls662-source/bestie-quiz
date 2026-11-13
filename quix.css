@@ -151,6 +151,12 @@ button {
 /* MOBILE RESPONSIVENESS */
 
 @media (max-width: 600px) {
+    body {
+        background-size: auto 100%;
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-attachment: scroll;
+    }
 
     .welcome {
         padding: 0 15px;
@@ -197,7 +203,6 @@ button {
         font-size: 16px;
         padding: 14px 10px;
     }
-
     .next-button {
         font-size: 16px;
         padding: 12px 25px;
